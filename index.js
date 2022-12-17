@@ -6,7 +6,12 @@ require("console.table");
 init();
 
 function init() {
-  const logoText = logo({ name: "Employee Tracker" }).render();
+  const logoText = logo({ 
+    name: "Employee Tracker",
+    font: "ANSI Shadow",
+    logoColor: "bold-yellow",
+    borderColor: "bold-orange"
+   }).render();
   console.log(logoText);
 
   loadMainPrompts();
